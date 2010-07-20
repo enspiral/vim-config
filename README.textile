@@ -18,5 +18,7 @@ h2. The manual way
 
 3. Start MacVim or GVim to see if it worked.
 
-h3. Thanks to "Oh My Zsh":http://github.com/robbyrussell/oh-my-zsh as I just repurposed their script and file structure.
+h3. Thanks to 
+
+"Oh My Zsh":http://github.com/robbyrussell/oh-my-zsh as I just repurposed their script and file structure.
 
