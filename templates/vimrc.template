@@ -1,0 +1,84 @@
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+syntax on
+set number
+set nowrap
+set hlsearch  " highlight search
+set incsearch  " incremental search, search as you type
+set ignorecase " Ignore case when searching 
+set smartcase " Ignore case when searching lowercase
+
+filetype plugin indent on
+
+set tabstop=2
+set smarttab
+set shiftwidth=2
+set autoindent
+set expandtab
+set backspace=start,indent
+set cursorline
+
+" Always display the status line
+set showcmd
+set ruler
+
+" , is the leader character
+let mapleader = ","
+
+" use ack instead of grep
+set grepprg=ack
+set grepformat=%f:%l:%m 
+
+" Sets the backgroud of the theme 0 is darker
+let g:molokai_original=1
+
+" Change which file opens after executing :Rails command
+let g:rails_default_file='config/database.yml'
+
+" Backups & Files
+set backup                   " Enable creation of backup file.
+set backupdir=~/.vim/backups " Where backups will go.
+set directory=~/.vim/tmp     " Where temporary files will go.
+
+" Fuzzy finder params
+let g:fuzzy_ignore = "*.log"
+let g:fuzzy_matching_limit = 70
+
+" Custom mappings
+map <leader>r :ruby finder.rescan!<CR>
+
+map <leader>t :FuzzyFinderTextMate<CR>
+map <leader>b :FuzzyFinderBuffer<CR>
+
+map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+
+map <leader>p :Project<CR>
+" map <leader>ch :Project<CR><C-h>/Choices<CR><CR>j<CR>:only<CR>
+
+:noremap ,v :vsp<cr>
+:noremap ,h :split<cr>
+
+imap jj <Esc>
+imap uu _
+imap hh =>
+
+map <S-Enter> O<ESC>
+map <Enter> o<ESC>
+
+map <C-j> <C-w>j
+map <C-h> <C-w>h
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" Ompni Complete
+" autocmd FileType html :set omnifunc=htmlcomplete#CompleteTags
+" autocmd FileType python set omnifunc=pythoncomplete#Complete
+" autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+" autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+" autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+" autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+" autocmd FileType c set omnifunc=ccomplete#Complete
+" autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete " may require ruby compiled in
+
