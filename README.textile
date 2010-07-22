@@ -2,12 +2,12 @@ h1. Enspiral Vim Configuration
 
 h2. The UNTESTED automatic installer... (check first, don't just trust me)
 
-@ wget http://github.com/enspiral/vim-config/raw/master/tools/install.sh -O - | sh @
+@wget http://github.com/enspiral/vim-config/raw/master/tools/install.sh -O - | sh@
 
 h2. The manual way
 
 # Clone the repository
-@ git://github.com/enspiral/vim-config.git ~/.vim @
+@git://github.com/enspiral/vim-config.git ~/.vim@
 
 # Create a new vim config by copying the vim template we've provided.
 *NOTE:* If you already have a @~/.vimrc@ file, you should back it up. @cp ~/.vimrc ~/.vimrc.orig@ in case you want to go back to your original settings.
