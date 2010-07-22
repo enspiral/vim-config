@@ -12,9 +12,11 @@ h2. The manual way
 
 2. Create a new vim config by copying the vim template we've provided.
 
-  *NOTE*: If you already have a ~/.vimrc file, you should back it up. @cp ~/.vimrc ~/.vimrc.orig@ in case you want to go back to your original settings.
-
-  @cp ~/.vim/templates/vimrc.template ~/.vimrc@
+   *NOTE*: 
+   If you already have a @~/.vimrc file, you should back it up. 
+   @cp ~/.vimrc ~/.vimrc.orig@ in case you want to go back to your original settings.
+  
+   @cp ~/.vim/templates/vimrc.template ~/.vimrc@
 
 3. Start MacVim or GVim to see if it worked.
 
