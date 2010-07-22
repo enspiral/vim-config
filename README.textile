@@ -2,25 +2,19 @@ h1. Enspiral Vim Configuration
 
 h2. The UNTESTED automatic installer... (check first, don't just trust me)
 
-@wget http://github.com/enspiral/vim-config/raw/master/tools/install.sh -O - | sh@
+@ wget http://github.com/enspiral/vim-config/raw/master/tools/install.sh -O - | sh @
 
 h2. The manual way
 
-1. Clone the repository
-  
-  @git://github.com/enspiral/vim-config.git ~/.vim@
+# Clone the repository
+@ git://github.com/enspiral/vim-config.git ~/.vim @
 
-2. Create a new vim config by copying the vim template we've provided.
+# Create a new vim config by copying the vim template we've provided.
+*NOTE:* If you already have a @~/.vimrc@ file, you should back it up. @cp ~/.vimrc ~/.vimrc.orig@ in case you want to go back to your original settings.
+@cp ~/.vim/templates/vimrc.template ~/.vimrc@
 
-   *NOTE*: 
-   If you already have a @~/.vimrc file, you should back it up. 
-   @cp ~/.vimrc ~/.vimrc.orig@ in case you want to go back to your original settings.
-  
-   @cp ~/.vim/templates/vimrc.template ~/.vimrc@
-
-3. Start MacVim or GVim to see if it worked.
+# Start MacVim or GVim to see if it worked.
 
 h3. Thanks to 
 
 "Oh My Zsh":http://github.com/robbyrussell/oh-my-zsh as I just repurposed their script and file structure.
-
