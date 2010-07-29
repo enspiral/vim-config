@@ -1,6 +1,6 @@
 h1. Enspiral Vim Configuration
 
-h2. The *UNTESTED* automatic installer... (check first, don't just trust me)
+h2. The automatic installer... (take a look first, don't just trust me)
 
 @wget http://github.com/enspiral/vim-config/raw/master/tools/install.sh -O - | sh@
 
@@ -16,3 +16,6 @@ h2. The manual way
 h3. Thanks to 
 
 "Oh My Zsh":http://github.com/robbyrussell/oh-my-zsh as I just repurposed their script and file structure.
+
+h3. Suggest using MacVim or GVim
+"MacVim":http://code.google.com/p/macvim/
